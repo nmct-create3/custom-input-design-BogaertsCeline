@@ -834,6 +834,33 @@ input::placeholder {
   align-items: center;
 }
 
+.c-toggle__input--alternative{
+  width: 40px;
+  height: 20px;
+  color: var(--color-neutral-xxx-light);
+}
+
+.c-toggle__input--alternative::after{
+  transform: translate(-4px,-2px);
+}
+
+.c-toggle__checkbox-hidden:checked +.c-toggle__label .c-toggle__input--alternative::after{
+  transform: translate(24px,-2px);
+  background-color: var(--color-alpha);
+  border: 1px solid var(--color-alpha-dark);
+}
+.c-toggle__checkbox-hidden:checked +.c-toggle__label .c-toggle__input--alternative{
+  background-color: var(--color-alpha-xx-light);
+  border: 1px solid white;
+}
+
+.c-toggle__checkbox-hidden:focus + .c-toggle__label .c-toggle__input--alternative::after{
+  box-shadow: 0 0 0 3px var(--color-alpha-xx-light);
+}
+
+.c-toggle__checkbox-hidden:focus + .c-toggle__label .c-toggle__input--alternative{
+  box-shadow: none
+}
 
 /*------------------------------------*\
 #UTILITIES
