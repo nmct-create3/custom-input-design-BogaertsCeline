@@ -882,6 +882,19 @@ input::placeholder {
   flex-direction:row-reverse;
 
 }
+
+.c-custom-select{
+  display: block;
+}
+
+.c-custom-select__symbol{
+  width: 24px;
+  height: 24px;
+  fill:var(--color-neutral-x-light);
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
 /*------------------------------------*\
 #UTILITIES
 \*------------------------------------*/
