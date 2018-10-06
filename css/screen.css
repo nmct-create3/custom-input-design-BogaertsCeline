@@ -838,10 +838,13 @@ input::placeholder {
   width: 40px;
   height: 20px;
   color: var(--color-neutral-xxx-light);
+  border: none;
 }
 
 .c-toggle__input--alternative::after{
   transform: translate(-4px,-2px);
+  border: 1px solid white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 16% );
 }
 
 .c-toggle__checkbox-hidden:checked +.c-toggle__label .c-toggle__input--alternative::after{
@@ -859,8 +862,9 @@ input::placeholder {
 }
 
 .c-toggle__checkbox-hidden:focus + .c-toggle__label .c-toggle__input--alternative{
-  box-shadow: none
+  box-shadow: none;
 }
+
 
 /*------------------------------------*\
 #UTILITIES
